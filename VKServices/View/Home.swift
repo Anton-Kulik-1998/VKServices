@@ -12,16 +12,17 @@ struct Home: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.courses, id: \.self) {course in
-                    HStack {
-                        URLImage(urlString: course.image)
-                        Text(course.name)
-                            .bold()
-                    }
-                    .padding(3)
-                }
+//                ForEach(viewModel.vkData, id: \.self) {service in
+//                    HStack {
+//                        Text(service.name)
+////                        URLImage(urlString: course.image)
+////                        Text(course.body.services.description)
+////                            .bold()
+//                    }
+//                    .padding(3)
+//                }
             }
-            .navigationTitle("Course")
+            .navigationTitle("Сервисы VK")
             .onAppear {
                 viewModel.fetch()
             }

@@ -8,17 +8,16 @@
 import SwiftUI
 
 class ViewModel: ObservableObject {
-    @Published var courses: [Course] = []
+    @Published var vkData: VKDataModel?
     func fetch() {
-        guard let url = URL(string: "https://iosacademy.io/api/v1/courses/index.php") else { return }
+        guard let url = URL(string: "https://publicstorage.hb.bizmrg.com/sirius/result.json") else { return }
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
-            guard let data = data, error == nil else {
-                return
-            }
+            guard let data = data, error == nil else { return }
             do {
-                let courses = try JSONDecoder().decode([Course].self, from: data)
+                let vkData = try JSONDecoder().decode(VKDataModel.self, from: data)
+//                print("\(vkData.body.services[0])")
                 DispatchQueue.main.async {
-                    self?.courses = courses
+                    self?.vkData = vkData
                 }
             }
             catch {
