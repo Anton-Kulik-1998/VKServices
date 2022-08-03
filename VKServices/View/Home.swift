@@ -13,7 +13,17 @@ struct Home: View {
         NavigationView {
             List {
                 ForEach(viewModel.service, id: \.self) {service in
-                    Text(service.name)
+                    Link(destination: service.link) {
+                        HStack {
+                            URLImage(urlString: service.iconURL)
+                            VStack(alignment: .leading, spacing: 3) {
+                                Text(service.name)
+                                Text(service.serviceDescription)
+                                    .font(.custom("system", size: 14))
+                            }
+                            .foregroundColor(.black)
+                        }
+                    }.lineLimit(2)
                 }
             }
             .navigationTitle("Сервисы VK")
@@ -29,3 +39,4 @@ struct Home_Previews: PreviewProvider {
         ContentView()
     }
 }
+//URLImage(urlString: course.image)
