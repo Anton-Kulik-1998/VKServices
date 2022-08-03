@@ -12,15 +12,9 @@ struct Home: View {
     var body: some View {
         NavigationView {
             List {
-//                ForEach(viewModel.vkData, id: \.self) {service in
-//                    HStack {
-//                        Text(service.name)
-////                        URLImage(urlString: course.image)
-////                        Text(course.body.services.description)
-////                            .bold()
-//                    }
-//                    .padding(3)
-//                }
+                ForEach(viewModel.service, id: \.self) {service in
+                    Text(service.name)
+                }
             }
             .navigationTitle("Сервисы VK")
             .onAppear {

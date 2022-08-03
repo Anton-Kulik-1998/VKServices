@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		3A71E1AC2895422100BE2234 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A71E1AB2895422100BE2234 /* ViewModel.swift */; };
 		3A71E1AE2897C91400BE2234 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A71E1AD2897C91400BE2234 /* Home.swift */; };
-		3A71E1B02897CAF700BE2234 /* VK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A71E1AF2897CAF700BE2234 /* VK.swift */; };
+		3A71E1B02897CAF700BE2234 /* VKDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A71E1AF2897CAF700BE2234 /* VKDataModel.swift */; };
 		3A71E1B22897D39000BE2234 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A71E1B12897D39000BE2234 /* URLImage.swift */; };
+		3A71E1B42899C00000BE2234 /* BodyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A71E1B32899C00000BE2234 /* BodyModel.swift */; };
+		3A71E1B62899C28200BE2234 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A71E1B52899C28200BE2234 /* ServiceModel.swift */; };
 		3AD5B677288EB4EC00D8BE6A /* VKServicesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5B676288EB4EC00D8BE6A /* VKServicesApp.swift */; };
 		3AD5B679288EB4EC00D8BE6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5B678288EB4EC00D8BE6A /* ContentView.swift */; };
 		3AD5B67B288EB4ED00D8BE6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD5B67A288EB4ED00D8BE6A /* Assets.xcassets */; };
@@ -20,8 +22,10 @@
 /* Begin PBXFileReference section */
 		3A71E1AB2895422100BE2234 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3A71E1AD2897C91400BE2234 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		3A71E1AF2897CAF700BE2234 /* VK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK.swift; sourceTree = "<group>"; };
+		3A71E1AF2897CAF700BE2234 /* VKDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKDataModel.swift; sourceTree = "<group>"; };
 		3A71E1B12897D39000BE2234 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		3A71E1B32899C00000BE2234 /* BodyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyModel.swift; sourceTree = "<group>"; };
+		3A71E1B52899C28200BE2234 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
 		3AD5B673288EB4EC00D8BE6A /* VKServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD5B676288EB4EC00D8BE6A /* VKServicesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKServicesApp.swift; sourceTree = "<group>"; };
 		3AD5B678288EB4EC00D8BE6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,7 +102,9 @@
 		3AD5B686288EB5C200D8BE6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3A71E1AF2897CAF700BE2234 /* VK.swift */,
+				3A71E1AF2897CAF700BE2234 /* VKDataModel.swift */,
+				3A71E1B32899C00000BE2234 /* BodyModel.swift */,
+				3A71E1B52899C28200BE2234 /* ServiceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,10 +181,12 @@
 			files = (
 				3AD5B679288EB4EC00D8BE6A /* ContentView.swift in Sources */,
 				3A71E1B22897D39000BE2234 /* URLImage.swift in Sources */,
+				3A71E1B42899C00000BE2234 /* BodyModel.swift in Sources */,
 				3A71E1AC2895422100BE2234 /* ViewModel.swift in Sources */,
-				3A71E1B02897CAF700BE2234 /* VK.swift in Sources */,
+				3A71E1B02897CAF700BE2234 /* VKDataModel.swift in Sources */,
 				3A71E1AE2897C91400BE2234 /* Home.swift in Sources */,
 				3AD5B677288EB4EC00D8BE6A /* VKServicesApp.swift in Sources */,
+				3A71E1B62899C28200BE2234 /* ServiceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
